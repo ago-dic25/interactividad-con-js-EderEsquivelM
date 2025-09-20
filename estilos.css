@@ -187,3 +187,16 @@ section img, aside img {
 .ocultar {
      display: none;
 }
+
+.mostrar{
+     display:block;
+}
+
+.post{
+     padding:20px;
+     border: solid 1px lightblue;
+     margin:10px 0;
+     background-origin: 5px 5px 5px rgba(0,0,0,0);
+     border-radius:20px;
+
+}

@@ -39,3 +39,25 @@ botonBuscar.addEventListener("click", function(){
     botonBuscar.classList.add("rojo");
 });
 
+//==== Variables ejercicio clase ===== //
+var mas=document.getElementById("mas");
+var verTotos=document.getElementById("verTodos");
+var verFotos=document.getElementById("verFotos");
+
+//Eventos de los elementos
+mas.addEventListener("click",function(){
+    alert("Seccion en progreso...")
+});
+
+verTodos.addEventListener("click",function(){
+    if(post.classList.contains("ocultar")){
+        post.classList.remove("ocultar");
+        post.classList.add("mostrar");
+    }else{
+        post.classList.remove("mostrar");
+        post.classList.remove(ocultar);
+    }
+});
+
+verFotos.addEventListener("click",function(){
+});
