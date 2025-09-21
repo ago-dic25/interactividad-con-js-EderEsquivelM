@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Spot</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +13,10 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="">
+        <img src="imagenes/logo.jpg" alt=""></img>
         <nav>
-            
+            <button id="modoOscuro">🌙</button>
+
             <button id="menu">Menu</button>
             <ul>
                 <li>
@@ -29,7 +29,7 @@
                     <a href="#">Podcast</a>
                 </li>
                  <li>
-                    <a href="#">Crear Cuenta / Registro</a>
+                    <a href="#">Register/ Log In</a>
                 </li>
             </ul>
             <button id="buscar">
@@ -42,28 +42,57 @@
         <section>
             <div class="tarjeta" id="bestOfTheWeek">
                 <h1>Best of the week</h1>
-                <a href="#">See all posts</a>
+                <p>Top podcasts of this week</p>
+                <a href="#" id="verTodos">See all posts</a>
             </div>
+            <div class="posts ocultar" id="posts">
+                <div class="post">Experiencia como Podcaster</div>
+                <div class="post">Como empezar</div>
+                <div class="post">Como hacerme viral en TikTok</div>
+                <div class="post">Como crear reels para redes</div>
+            </div>
+
             <div class="tarjeta" id="travel">
                 <span>Sep 06, 2022</span>
                 <button>Travel</button>
                 <img src="imagenes/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg" width="50%" alt="">
                 <div class="info">
-                    <span>Travel</span>
-                    <h2>TravelPro</h2>
+                <span>Travel</span>
+                    <h2>TravelPro: Travel Tips</h2>
+                    <p>Destinations, adventures, and travel advice</p>
                 </div>
             </div>
+
         </section>
         <aside>
             <div class="tarjeta" id="ads">
                 <span>ADS</span>
-                <button>+</button>
-                <span>Become a podcaster</span>
+                <button id="mas">👍🏼</button>
+                <span>Likes: <span id="contadorLikes">0</span></span>
+                 <p>Become a podcaster today</p>
                 <h3>Real talk</h3>
             </div>
+
             <div  class="tarjeta" id="seeAll">
                 <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
-                <button>See all pics</button>
+                <button id="verFotos">See all pics</button>
+                <p>Gallery of photos and sounds</p>
+                <div class="fotos ocultar" id="fotos">
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                </div>
+
+                <div> </div>
             </div>
         </aside>
     </main>
